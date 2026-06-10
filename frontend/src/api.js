@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://task-manager-mern-lzhx.onrender.com/api",
 });
+
 
 // Add interceptor to automatically attach authorization token to request headers
 API.interceptors.request.use(
